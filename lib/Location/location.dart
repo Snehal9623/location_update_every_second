@@ -89,7 +89,7 @@ class MyLocationPageState extends State<LocationPage>{
     Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
   setState(() {
     lat= position.latitude.toString();
-    long= position.longtude.toString();
+    long= position.longitude.toString();
     print("Lattitude:$lat");
     print("Longitude:$long");
 
